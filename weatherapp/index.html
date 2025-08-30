@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌦️ Live Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1>🌦️ Live Weather</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="resultBox" class="weather-result">
+      <div id="error" class="error">City not found. Please try again!</div>
+      <div id="weatherInfo" class="weatherInfo">
+        <div id="dateTimeBox" class="datetime"></div>
+        <h2 id="cityName"></h2>
+        <div class="icon-wrapper">
+          <img id="weatherIcon" class="weather-icon" src="" alt="Weather Icon">
+        </div>
+        <div class="details">
+          <div><strong>🌡️</strong> <span id="temperature">--</span> °C</div>
+          <div><strong>💧</strong> <span id="humidity">--</span>% Humidity</div>
+          <div><strong>🌬️</strong> <span id="wind">--</span> m/s Wind</div>
+          <div><strong>☁️</strong> <span id="clouds">--</span>% Clouds</div>
+          <div><strong>🌧️</strong> <span id="rain">--</span> mm Rain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
